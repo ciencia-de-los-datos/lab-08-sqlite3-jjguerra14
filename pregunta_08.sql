@@ -29,7 +29,7 @@
 --    c25 CHAR(5)
 --
 --  Escriba una consulta que compute el promedio
---  de la columna c21 de la tabla tbl2 por ano 
+--  de la columna c21 de la tabla tbl2 por año 
 --  (columna c23).
 --
 --  Rta/
@@ -41,3 +41,5 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT strftime('%Y', c23) AS YEAR, avg(c21)  FROM tbl2
+GROUP BY strftime('%Y', c23);
