@@ -18,4 +18,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
-SELECT COUNT(*) AS cantidad_registros FROM tbL1;
+SELECT COUNT(*) FROM tbL1;
